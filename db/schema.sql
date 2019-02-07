@@ -11,20 +11,8 @@ CREATE TABLE Homes (
 CREATE TABLE Authors (
     id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(42) NOT NULL,
+    img_url VARCHAR(500) NOT NULL,
     PRIMARY KEY (id)
-)
-
-CREATE TABLE Complaints (
-id INT NOT NULL AUTO_INCREMENT,
-complaint VARCHAR(30) NOT NULL,
-PRIMARY KEY (id)
-)
-
-CREATE TABLE Complaints/Reviews (
-    id INT NOT NULL AUTO_INCREMENT,
-    complaints_id INT NOT NULL,
-    reviews_id INT NOT NULL,
-    PRIMARY KEY(id)
 )
 
 CREATE TABLE Reviews (
@@ -38,7 +26,11 @@ CREATE TABLE Reviews (
     check-in INT NOT NULL,
     value INT NOT NULL,
     complaints_id INT,
-    comment VARCHAR(150),
+    comment VARCHAR(500),
     created_at date,
     PRIMARY KEY (id),
 )
+
+
+-- make my seed chart below. this is a series of inserts that will build me a dummy database.
+--Homes--
