@@ -25,7 +25,7 @@ CREATE TABLE Reviews (
     location INT NOT NULL,
     check-in INT NOT NULL,
     value INT NOT NULL,
-    complaints_id INT,
+    complaints BOOLEAN,
     comment VARCHAR(500),
     created_at date,
     PRIMARY KEY (id),
